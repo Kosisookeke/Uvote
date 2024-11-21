@@ -66,7 +66,7 @@
                         <td class="td-1"><input  required type="email" style="text-align: left;" name="txtEmail"></td>
                     </tr>
                     <tr>
-                        <td class="td-1">Your Branch :</td>
+                        <td class="td-1">Branch :</td>
                         <td class="td-1"><input   required type="text" style="text-align: left;" name="txtBranch"></td>
                     </tr>
                     <tr>

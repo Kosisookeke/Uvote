@@ -66,7 +66,7 @@
                         <td class="td-1"><input type="email" required style="text-align: left;" name="txtEmail"></td>
                     </tr>
                     <tr>
-                        <td class="td-1">Your Branch :</td>
+                        <td class="td-1">Branch :</td>
                         <td class="td-1"><input type="text" required style="text-align: left;" name="txtBranch"></td>
                     </tr>
                     <tr>
@@ -74,7 +74,7 @@
                         <td class="td-1"><input type="number" required style="text-align: left;" name="txtNumber"></td>
                     </tr>
                     <tr>
-                        <td class="td-1">Candidate :</td>
+                        <td class="td-1">Candidate:</td>
 					<td class="td-1"><select required name="txtCand">
             <option>--------Select--------</option>
             <?php 

@@ -16,7 +16,7 @@
           <h1> Contact Form </h1>
           <p style="padding-bottom:50px;">Any Queries , Drop Contact Form  </p>  
         </div>
-        <div class="col-md-4" style="border-radius: 6px; border: 3px  #17ba53 solid;">
+        <div class="col-md-4" style="border-radius: 6px; border: 3px  #a517ba solid;">
           <h2 style="padding-top: 30px;">Contact Form</h2>
           <form action="contact.php" method="post">
             <table>

@@ -42,7 +42,8 @@ include("header.html");
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p>Online voting systems are software platforms used to securely conduct votes and elections. As a digital platform, they eliminate the need to cast your votes using paper or having to gather in person.
+                <p>Uvote Online Voting System aims to provide a transparent and secure method for conducting elections. The system allows user registration, voting, and results analysis. It addresses issues related to election fraud, ensuring that votes are accurately recorded and counted.
+
  
                     They also protect the integrity of your vote by preventing voters from being able to vote multiple times.
                      

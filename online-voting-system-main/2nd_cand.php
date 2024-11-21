@@ -112,10 +112,10 @@
               <hr>
               <div class="Footer">
                 <ul style="display: flex;">
-                  <li style="list-style: none; padding: 10px; "><a href="index.html" style="text-decoration: none; color: #17ba53;">Home</a></li>
-                  <li style="list-style: none; padding: 10px; "><a href="about.php" style="text-decoration: none; color: #17ba53;">About</a></li>
-                  <li style="list-style: none; padding: 10px; "><a href="suggestion.html" style="text-decoration: none; color: #17ba53;">Suggestion</a></li>
-                  <li style="list-style: none; padding: 10px; "><a href="contact_form.php" style="text-decoration: none; color: #17ba53;">Contact</a></li>
+                  <li style="list-style: none; padding: 10px; "><a href="index.html" style="text-decoration: none; color: #a517ba;">Home</a></li>
+                  <li style="list-style: none; padding: 10px; "><a href="about.php" style="text-decoration: none; color: #a517ba;">About</a></li>
+                  <li style="list-style: none; padding: 10px; "><a href="suggestion.html" style="text-decoration: none; color: #a517ba;">Suggestion</a></li>
+                  <li style="list-style: none; padding: 10px; "><a href="contact_form.php" style="text-decoration: none; color: #a517ba;">Contact</a></li>
                 </ul>
               </div>
             </div>

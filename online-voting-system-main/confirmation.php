@@ -66,7 +66,7 @@
                         <td class="td-1"><input type="email" style="text-align: left;" name="txtEmail" required></td>
                     </tr>
                     <tr>
-                        <td class="td-1">Branch :</td>
+                        <td class="td-1">Branch:</td>
                         <td class="td-1"><input type="text" style="text-align: left;" name="txtBranch" required></td>
                     </tr>
                     <tr>
@@ -74,7 +74,7 @@
                         <td class="td-1"><input type="number" style="text-align: left;" name="txtNumber" required pattern="[6-9]{1}[0-9]{9}"></td>
                     </tr>
                     <tr>
-                        <td class="td-1">Which Candidate :</td>
+                        <td class="td-1">Candidate :</td>
 					<td class="td-1"><select required name="txtCand" required>
             <option>--------Select--------</option>
             <?php 

@@ -13,7 +13,7 @@
 			margin-top:100px;
 			text-align:center;
 			padding:30px;	
-			border:4px #17ba53 solid;
+			border:4px #a517ba solid;
 			border-radius:5px;	
 		}
 	</style>

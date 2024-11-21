@@ -48,7 +48,7 @@ $stmt->execute();
     <div class="container-fluid" id="cont-3">
         <header id="nav-bar">
           <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand" href=index.html  style="color: white; font-weight: 600; margin-top: 15px;">U VOTE</a>
+            <a class="navbar-brand" href=index.html  style="color: white; font-weight: 600; margin-top: 15px;">GO VOTE</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon" style="color: white;"></span>
             </button>
@@ -102,10 +102,10 @@ $stmt->execute();
                   <hr>
                   <div class="Footer">
                   <ul style="display: flex;">
-                  <li style="list-style: none; padding: 10px; "><a href="index.html" style="text-decoration: none; color: #17ba53;">Home</a></li>
-                  <li style="list-style: none; padding: 10px; "><a href="about.php" style="text-decoration: none; color: #17ba53;">About</a></li>
-                  <li style="list-style: none; padding: 10px; "><a href="suggestion.html" style="text-decoration: none; color: #17ba53;">Suggestion</a></li>
-                  <li style="list-style: none; padding: 10px; "><a href="contact_form.php" style="text-decoration: none; color: #17ba53;">Contact</a></li>
+                  <li style="list-style: none; padding: 10px; "><a href="index.html" style="text-decoration: none; color: #a517ba;">Home</a></li>
+                  <li style="list-style: none; padding: 10px; "><a href="about.php" style="text-decoration: none; color: #a517ba;">About</a></li>
+                  <li style="list-style: none; padding: 10px; "><a href="suggestion.html" style="text-decoration: none; color: #a517ba;">Suggestion</a></li>
+                  <li style="list-style: none; padding: 10px; "><a href="contact_form.php" style="text-decoration: none; color: #a517ba;">Contact</a></li>
                 </ul>
                   </div>
                 </div>
