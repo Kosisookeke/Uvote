@@ -3,153 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Suggestion Form</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <style>
-      .td-1{
-          text-align: center;
-          padding-top: 20px;
-          
-      }
-     
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #nav-bar {
+            margin-bottom: 40px;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+            text-transform: capitalize;
+            padding: 20px;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            background-color: #a517ba;
+            border-radius: 5px;
+        }
+
+        .td-1 {
+            text-align: left;
+            padding-top: 20px;
+        }
+
+        .td-1 input, .td-1 textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .td-1 input:focus, .td-1 textarea:focus {
+            border-color: #a517ba;
+        }
+
+        .magnifyBtn {
+            background-color: #a517ba;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .magnifyBtn:hover {
+            background-color: #7a0d8e;
+        }
+
+        #center {
+            padding: 40px 0;
+        }
+
+        #center h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #5f1178;
+        }
+
+        .footer {
+            background-color: #5f1178;
+            color: white;
+            padding: 5px 10px; /* Reduced padding */
+            text-align: center;
+            position: relative; /* Changed from fixed to relative */
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap; /* Ensures it adapts to smaller screens */
+            justify-content: center; /* Centers content */
+            align-items: center;
+            font-size: 14px; /* Adjust text size */
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 5px 0; /* Reduced margin */
+            display: flex;
+            flex-wrap: wrap; /* Makes footer adaptable to small screens */
+            justify-content: center;
+        }
+
+        .footer li {
+            margin: 0 10px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icon ul {
+            padding: 0;
+            margin: 10px 0; /* Reduced spacing */
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icon li {
+            margin: 0 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .td-1 input,
+            .td-1 textarea {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container-fluid" id="cont-3">
         <header id="nav-bar">
-          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand" href="index.html"  style="color: white; font-weight: 600; margin-top: 15px;">GO VOTE</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" style="color: white;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto animate__animated animate__bounceInDown" style="padding-right: 50px;">
-                <li class="nav-item" >
-                  <a class="nav-link" href="index.html" style="color:white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Home</a>
-                </li>
-                <li class="nav-item" >
-                  <a class="nav-link" href="candidate.php"  style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Candidate</a>
-                </li>
-              
-                <li class="nav-item">
-                  <a class="nav-link" href="result.php" style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Result</a>
-                </li>
-              
-                <li class="nav-item" >
-                  <a class="nav-link" href="about.php"  style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">About</a>
-                </li>
-              
-              </ul>
-            </div>
-          </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="index.html">U VOTE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: white;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="candidate.php">Candidate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="result.php">Result</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.php">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-    
 
-
-    </section>
-    <section id="center">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6" >
-                <h1 style="padding-top: 20px;">Suggestion</h1>
-                <form action="insert_sugg.php" method="post">
-                <table>
-                    <tr>
-                        <td class="td-1">Name :</td>
-                        <td class="td-1"><input required type="text" style="text-align: left;" name="txtName"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-1">Email :</td>
-                        <td class="td-1"><input required type="email" style="text-align: left;" name="txtEmail"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-1">Mobile Number :</td>
-                        <td class="td-1"><input required type="number" style="text-align: left;" name="txtNumber"></td>
-                    </tr>
-              
-                    <tr>
-                        <td class="td-1">Roll No. :</td>
-                        <td class="td-1"><input required type="number" style="text-align: left;" name="txtRollNo"></td>
-                    </tr>
-                    <tr>
-                        <td class="td-1">Suggestion :</td>
-                        <td class="td-1"><textarea style="text-align: left;" name="txtSuggestion" id="" cols="23" rows="2" placeholder=""></textarea></td>
-                    </tr>
-                    <tr>
-                        <td class="td-2" id style="padding-top: 40px; padding-bottom: 40px;" ><button class="magnifyBtn" name="Submit">Submit</button></td>
-                    </tr>
-                </table>
-              </form>
+        <section id="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Suggestion</h1>
+                        <form action="insert_sugg.php" method="post">
+                            <table>
+                                <tr>
+                                    <td class="td-1">Name:</td>
+                                    <td class="td-1"><input required type="text" name="txtName"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-1">Email:</td>
+                                    <td class="td-1"><input required type="email" name="txtEmail"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-1">Mobile Number:</td>
+                                    <td class="td-1"><input required type="number" name="txtNumber"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-1">Roll No.:</td>
+                                    <td class="td-1"><input required type="number" name="txtRollNo"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-1">Suggestion:</td>
+                                    <td class="td-1"><textarea name="txtSuggestion" cols="23" rows="2" placeholder=""></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-1"><button class="magnifyBtn" name="Submit">Submit</button></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/8.svg" alt="Illustration">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6" style="padding-top: 50px;">
-                <img src="img/8.svg" alt="" srcset="" width="95%">
-            </div>
-        </div>
+        </section>
     </div>
-</section>
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-md-6">
-        <hr>
-        <div class="Footer">
-          <ul style="display: flex;">
-            <li style="list-style: none; padding: 10px; "><a href="index.html" style="text-decoration: none; color: #a517ba;">Home</a></li>
-            <li style="list-style: none; padding: 10px; "><a href="about.php" style="text-decoration: none; color: #a517ba;">About</a></li>
-            <li style="list-style: none; padding: 10px; "><a href="suggestion.html" style="text-decoration: none; color: #a517ba;">Suggestion</a></li>
-            <li style="list-style: none; padding: 10px; "><a href="contact_form.php" style="text-decoration: none; color: #a517ba;">Contact</a></li>
-          </ul>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="suggestion.html">Suggestion</a></li>
+                <li><a href="contact_form.php">Contact</a></li>
+            </ul>
         </div>
-      </div>
-      <div class="col-md-6">
-        <hr>
+
         <div class="social-icon">
-          <ul >
-                          <li>
-                              <a href="">
-                                  <i class="fa fa-facebook"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="">
-                                  <i class="fa fa-google-plus"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="">
-                                  <i class="fa fa-linkedin"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="">
-                                  <i class="fa fa-twitter"></i>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="">
-                                  <i class="fa fa-pinterest"></i>
-                              </a>
-                          </li>
-                      </ul>
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            </ul>
         </div>
-      </div>
     </div>
-  </div>
-  </section>
-
-  
-   
-       <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>    
-    <script src="js/bootstrap.min.js"></script>  
-    <!-- <script src="js/aos.js"></script>
-    <script>
-     AOS.init();
-    </script> -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
