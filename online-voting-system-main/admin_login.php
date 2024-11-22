@@ -71,7 +71,7 @@
                             unset($_SESSION['error']);
                         }
                     ?>
-                    <form action="process_login.php" method="post">
+                    <form action="process.php" method="post">
                         <div class="form-group">
                             <input required type="text" class="form-control" name="username" placeholder="Your Email *" />
                         </div>
