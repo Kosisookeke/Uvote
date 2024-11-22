@@ -1,4 +1,4 @@
-# **U_Vote Online Voting System**
+# **U_Vote Online-Voting System**
 
 This project is a PHP-based voting system designed to allow users to securely log in and vote for candidates. Follow the steps below to set up and run the application using the XAMPP Control Panel.
 
